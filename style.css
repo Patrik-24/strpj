@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: 	rgb(250, 240, 230);
+}
+
+table {
+    display: none;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+form {
+    display: none;
+}
+.uvodT {
+    border-radius: 0.5rem;
+    background-image: url('pozvanka.png');
+    width: 20rem;
+    height: 28rem;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vyB {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid rgb(250, 240, 230);
+    border-radius: 5px;
+    color: #586B97;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 9rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-family: 'Tektur', sans-serif;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
+}
+
+.vyB:hover {
+    background-color: #3498db;
+    color: #fff;
+    animation: none; 
+}
+

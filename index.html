@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Picnic Date</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Love+Ya+Like+A+Sister&family=Tektur:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="uvodT">
+        <button class="vyB" onclick="openForm()">Click Here!</button>
+    </div>
+
+    <form id="myForm">
+        <label for="fname">nieco tu:</label>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">mozno tu:</label>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="email">ano tu:</label>
+        <input type="text" id="email" name="email" required><br>
+
+        <button type="button" onclick="submitForm()">Odeslat</button>
+    </form>
+
+    <div id="confirmation" style="display: none;">
+        <p>Piknik se bude konat: <span id="result"></span></p>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
